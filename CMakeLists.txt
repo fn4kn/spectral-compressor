@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.15)
 project(spectral_compressor VERSION 0.0.1 LANGUAGES CXX)
 
 # TODO: Figure out a clean way to allow maintainers to disable all static
-#       linking and downloading
+#       linking and downloading.
 option(FORCE_STATIC_LINKING "Statically link all dependencies, for distribution" OFF)
 # This option should not be necessary as FFTW should at runtime choose the
 # correct version based on the current CPU, but apparently on MacOS it doesn't
